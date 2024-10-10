@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Agenda de contatos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <main class="container">
+        <header>
+            <img src="./img/217837 nnnnnnnnnnnnnnn.png"   alt="logotipo de uma agenda">
+            <h1>Agenda de contatos</h1>
+        </header>
+
+        <form id="form-agenda">
+
+
+            <input
+            type="text" 
+            placeholder="Digite a URL da foto" 
+            id="foto-contato"
+        >
+
+
+                <input 
+                type="text" 
+                placeholder="Digite o nome do contato" 
+                required 
+                id="nome-contato">
+
+                <input 
+                type="tel" 
+                placeholder="(xx) xxxxx-xxxx" 
+                required 
+                id="tel-contato"
+                pattern="[0-9]{10,11}">
+
+                <button type="submit">
+                    <img src="./436361-vector-adicionar-icone-gratis-vetor.jpg" alt="icone de adiconar contato">
+                    Adicionar
+                </button>
+                <button type="button" onclick="limparTabela()">
+                    <img src="./img/download kkkkkkkkk.png" alt="icone de uma lixeira">
+                    Limpar lista
+
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>fotos</th>
+                                    <th>Nome contato</th>
+                                    <th>Telefone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <td>pessoa A</td>
+                                <td>(11) 97495-1997</td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <td>pessoa B</td>
+                                <td>(11) 97494-1998</td>
+                                <tr>
+                                    <td>Total de Contatos</td>
+                    <td id="total-contatos">2</td>
+                                    <td colspan="2">Total de Contatos</td>
+                                    <td id="total-contatos"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </main>
+                    <script src="./main.js"></script>
+
+    </main>
+</body>
+</html>
